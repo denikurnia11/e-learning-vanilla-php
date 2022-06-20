@@ -1,5 +1,5 @@
 <?php session_start();
-require('../../config/filterAdmin.php')
+require('../../config/filterUser.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@ require('../../config/filterAdmin.php')
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Dashboard | Admin</title>
+    <title>E-Learning | Home</title>
 
     <!-- Custom fonts for this template-->
     <link href="../../assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -43,17 +43,17 @@ require('../../config/filterAdmin.php')
             <li class="nav-item">
                 <a class="nav-link" href="./dashboard.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Home</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider" />
 
-            <!-- Heading -->
-            <div class="sidebar-heading">Data Master</div>
+            <!-- Heading
+            <div class="sidebar-heading">Data Master</div> -->
 
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="./users.php">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Users</span></a>
@@ -62,10 +62,10 @@ require('../../config/filterAdmin.php')
                 <a class="nav-link" href="./materi.php">
                     <i class="fas fa-fw fa-book"></i>
                     <span>Materi</span></a>
-            </li>
+            </li> -->
 
             <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block" />
+            <!-- <hr class="sidebar-divider d-none d-md-block" /> -->
             <li class="nav-item">
                 <a class="nav-link" href="../../controllers/auth/Logout.php">
                     <i class="fas fa-fw fa-sign-out-alt"></i>

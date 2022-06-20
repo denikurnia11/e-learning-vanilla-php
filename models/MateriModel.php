@@ -22,6 +22,13 @@ class MateriModel
         return mysqli_query($koneksi, $query);
     }
 
+    public function getTotalMateri()
+    {
+        require '../../config/koneksi.php';
+        $query = "SELECT COUNT(*) as total FROM tb_materi";
+        return mysqli_query($koneksi, $query);
+    }
+
     public function save($judul, $keterangan, $file)
     {
         require '../../config/koneksi.php';
